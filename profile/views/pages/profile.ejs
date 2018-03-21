@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+
+	<title>Votre profil </title>
+
+	</head>
+
+
+	<body>
+	<h1> Bonjour <%=nom%> </h1>
+	<p>Bienvenu sur votre réseau social préféré ! Faîtes des publications ou bien consultez vos anciennes ;) </p>
+
+
+	<a href="/post"> créer un poste 	</a> <br>
+	<a href="/friends"> Suivre des utilisateurs </a> <br>
+	<a href="/"> Retour Homepage	</a>
+
+	<h1>Vos posts : </h1>
+
+	<% posts.forEach(function(post){ %>
+             <h2>Titre : <%=post.title %> </h2>
+							<p>description : <%=post.description %> </p>
+							<p>Date : <%=post.createdAt%></p>
+							<p>Auteur :  <%=nom%> </p>
+							<p>_________________________________________________________</p>
+            <%});%>
+
+
+
+
+
+
+</form>
+
+</body>
+
+
+
+</html>
